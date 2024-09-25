@@ -1,10 +1,14 @@
+import string
 import nltk
 from nltk.corpus import stopwords
-import string
+
+
+nltk.download('stopwords')
 
 def preprocess_text(text):
     text = text.lower()
-    text = ''.join([char for char not in string.punctuation])
-    tokens = text.split()
-    text = [word for word not in stopwords.words('english')]
-    return ' '.join(text)
+    text = ''.join([char for char in text if char not in string.punctuation])
+    words = text.split()
+    words = [word for word in words if word not in stopwords.words('english')]
+    words = [word for word in words if word.isalpha()]
+    return ' '.join(words)
