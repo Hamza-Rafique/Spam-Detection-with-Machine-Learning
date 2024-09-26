@@ -1,20 +1,17 @@
-import pandas as pd
-from src.data_preprocessing import preprocess_text
-from src.feature_extraction import extract_features
-from src.train_model import train_model
-from src.evaluate_model import evaluate_model
+from src import train, predict
 
-# Load dataset
-df = pd.read_csv('data/spam.csv', encoding='latin-1')
-df['message_cleaned'] = df['message'].apply(preprocess_text)
+def main():
+    choice = input("Enter 'train' to train the model or 'predict' to check a message: ")
 
-# Feature extraction
-X = extract_features(df['message_cleaned'])
-y = df['label']
+    if choice == 'train':
+        train.train_model('data/spam.csv')
+    elif choice == 'predict':
+        message = input("Enter the message to check: ")
+        result = predict.predict_spam(message)
+        print(f"Result: {result}")
+    else:
+        print("Invalid option. Please enter 'train' or 'predict'.")
 
-# Train the model
-model, X_test, y_test = train_model(X, y)
+if __name__ == "__main__":
+    main()
 
-# Evaluate model
-report = evaluate_model(model, X_test, y_test)
-print(report)

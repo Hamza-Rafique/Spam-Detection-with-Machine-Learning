@@ -1,7 +1,6 @@
-Message	Label
-"Hi, how are you?"	0
-"Buy Viagra now! Cheap prices."	1
-"You've won a free iPhone!"	1
-"Can you help me with this assignment?"	0
-"URGENT: Your account has been compromised."	1
-	
+Message,Label
+"Hi, how are you?",0
+"Buy Viagra now! Cheap prices.",1
+"You've won a free iPhone!",1
+"Can you help me with this assignment?",0
+"URGENT: Your account has been compromised.",1
