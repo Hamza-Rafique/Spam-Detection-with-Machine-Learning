@@ -1,25 +1,19 @@
-spam_detection/
-│
-├── data/
-│   └── spam.csv       
-│
-├── model/
-│   └── spam_detection_model.pkl  
-│   └── tfidf_vectorizer.pkl  
-│
-├── notebooks/
-│   └── spam_detection.ipynb
-│
-├── src/
-│   └── _init_.py  
-│   └── predict.py
-│   └── preprocess.py  
-│   └── train.py
-│
-├── tests/
-│   └── test_model.py  
-│
-├── main.py     
-├── .gitignore                 
-├── requirements.txt      
-└── README.md              
+# **Spam Detection with Machine Learning**
+
+This project implements a simple spam detection system using machine learning techniques. The model is trained on a labeled dataset of messages and predicts whether a message is spam (1) or not spam (0).
+
+## **Setup Instructions**
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/spam_detection.git
+   ```
+2. **Navigate to the project directory:**
+ ```bash
+   cd spam_detection
+  ```
+3.** Install dependencies: ** Make sure you have Python installed. Then, run the following command to install the required packages:
+
+ ```bash
+pip install -r requirements.txt
+ ```
