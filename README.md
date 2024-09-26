@@ -17,3 +17,10 @@ This project implements a simple spam detection system using machine learning te
  ```bash
 pip install -r requirements.txt
  ```
+---
+
+**run **
+
+ ```bash
+python main.py
+ ```
