@@ -19,7 +19,7 @@ pip install -r requirements.txt
  ```
 ---
 
-**run **
+**run**
 
  ```bash
 python main.py
