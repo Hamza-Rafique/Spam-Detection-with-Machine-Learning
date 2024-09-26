@@ -1,14 +1,11 @@
 import joblib
 
 def predict_spam(message):
-    # Load trained model and vectorizer
     model = joblib.load('models/spam_detection_model.pkl')
     vectorizer = joblib.load('models/tfidf_vectorizer.pkl')
 
-    # Preprocess the input message
     message_tfidf = vectorizer.transform([message])
 
-    # Predict
     prediction = model.predict(message_tfidf)
     return "Spam" if prediction[0] == 1 else "Not Spam"
 
