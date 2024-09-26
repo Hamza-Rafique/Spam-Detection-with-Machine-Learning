@@ -6,13 +6,13 @@ This project implements a simple spam detection system using machine learning te
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/spam_detection.git
+   git clone https://github.com/Hamza-Rafique/Spam-Detection-with-Machine-Learning.git
    ```
 2. **Navigate to the project directory:**
  ```bash
-   cd spam_detection
+   cd Spam-Detection-with-Machine-Learning
   ```
-3.** Install dependencies: ** Make sure you have Python installed. Then, run the following command to install the required packages:
+3.**Install dependencies:** Make sure you have Python installed. Then, run the following command to install the required packages:
 
  ```bash
 pip install -r requirements.txt
